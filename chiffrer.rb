@@ -1,4 +1,4 @@
-def ceasar_cipher (string, decalage)
+def chiffre_de_cesar (string, decalage)
 	decalage %=26
 
 	new_array = string.split('').map! do |x|
@@ -7,7 +7,7 @@ def ceasar_cipher (string, decalage)
 		 if x.class == Fixnum && (x <= 90 && x > 90 - decalage || x > 122- decalage)
 		 	x = x + decalage - 26
 		 elsif x.class == Fixnum
-		 	x = x + decalage+
+		 	x = x + decalage
 		 else
 		 	x
 		 end
@@ -17,4 +17,4 @@ def ceasar_cipher (string, decalage)
 	puts new_array.join
 end
 
-ceasar_cipher("What a string", 3)
+chiffre_de_cesar("What a string", 3)
