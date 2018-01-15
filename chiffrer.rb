@@ -17,4 +17,4 @@ def chiffre_de_cesar (string, decalage)
 	puts new_array.join
 end
 
-chiffre_de_cesar("What a string", 3)
+chiffre_de_cesar("What a string", 123)
